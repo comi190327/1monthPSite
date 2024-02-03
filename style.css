@@ -1,1 +1,6 @@
-/* comment */
+/* mainクラスの文字配置を中央に設定 */
+.main {
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+}
