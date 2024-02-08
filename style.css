@@ -1,23 +1,6 @@
-/* headerクラス全体 */
-header {
-    display: flex;
-    width: 100%;
-    height: 100px;
-    background-color: whitesmoke;
-    align-items: center;
-    position: fixed;
-}
-/* headerクラス　menu-item */
-.menu-item {
-    list-style-type: disc;
-    display: inline-block;
-    padding: 10px;
-}
-
 /* mainクラスの文字配置を中央に設定 */
 .main {
     width: 100%;
     max-width: 1280px;
     margin: auto;
-    padding: 130px;
 }
