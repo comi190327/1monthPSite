@@ -6,12 +6,50 @@ header {
     background-color: whitesmoke;
     align-items: center;
     position: fixed;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
 }
+
 /* headerクラス　menu-item */
 .menu-item {
     list-style-type: disc;
     display: inline-block;
     padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* 中心から線が伸びる */
+.menu-item a {
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+    /* 線の基点とするためrelativeを指定 */
+	position: relative;
+}
+
+.menu-item a:hover {
+    color: blue;
+}
+
+.menu-item a::after {
+    content: '';
+    /* 絶対配置で線の位置を決める */
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    /* 線の形状 */
+    width: 80%;
+    height: 2px;
+    background-color: blue;
+    /* アニメーションの指定 */
+    transition: all 1s;
+    transform: scale(0,1);
+    transform-origin: center top;
+}
+
+.menu-item a:hover::after {
+    transform: scale(1,1);
 }
 
 /* mainクラスの文字配置を中央に設定 */
