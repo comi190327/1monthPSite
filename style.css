@@ -10,7 +10,6 @@ header {
     flex-wrap: wrap;
     list-style: none;
 }
-
 /* headerクラス　menu-item */
 .menu-item {
     list-style-type: disc;
